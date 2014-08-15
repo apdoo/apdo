@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.hexor.dao.IUserMapper">
+   <sql id="columnUser">
+		  ID,
+		  username,
+		  password,
+		  datetime,
+		  signdate,
+		  flag,
+		  type
+	 </sql>
+ 
+    <resultMap type="com.hexor.repo.User" id="userResultMap">  
+        <id property="id" column="id"/>  
+        <result property="username" column="username"/>  
+        <result property="password" column="password"/>  
+        <result property="datetime" column="datetime"/>  
+        <result property="signdate" column="signdate"/>  
+        <result property="flag" column="flag"/>  
+        <result property="type" column="type"/>  
+    </resultMap>
+    
+     <select id="getAllUser"   resultMap="userResultMap">
+            select * from user 
+    </select>
+	<!-- SELECT * FROM user WHERE name like CONCAT('%',#{name},'%') -->
+    <select id="getOneUserByDate" parameterType="String" resultType="com.hexor.repo.User" >
+    	select * from user where signdate not like CONCAT(#{value},'%')   order by id limit 0,1
+    </select> 
+    <select id="checkUser"   parameterType="String" resultType="com.hexor.repo.User">
+            select 
+            	<include refid="columnUser"/>  
+           	from user where username=#{value}
+    </select>
+    
+    <insert id="insertUser"  parameterType="com.hexor.repo.User" >
+    		insert into user(<include refid="columnUser" />) values(
+            	#{id},
+            	#{username},
+            	#{password},
+            	#{datetime},
+            	#{flag},
+            	#{signdate},
+            	#{type}
+            	)
+    </insert>
+    
+    <update id="updateUser" parameterType="com.hexor.repo.User">
+    	update user set password=#{password},datetime=#{datetime},type=#{type},signdate=#{signdate} where username=#{username}
+    </update>
+    
+    <update id="updateSigndate" parameterType="java.util.Map">
+    	update user set  signdate=#{signdate},flag=#{flag} where username=#{username}
+    </update>
+    <!-- 查找总条数 -->
+     <select id="getUsersCount"   resultType="long">
+            select count(*) from user 
+    </select>
+    
+    <!-- 针对mysql的分页 limit函数 -->
+    <select id="limit" parameterType="com.hexor.repo.Pager" resultMap="userResultMap">
+			select * from user order by id desc limit #{index},#{data}  
+    </select>
+    
+    <select id="getUnSignCount"  parameterType="String"  resultType="long">
+    	select count(*) from user where signdate not like CONCAT(#{value},'%') 
+    </select>
+ </mapper>

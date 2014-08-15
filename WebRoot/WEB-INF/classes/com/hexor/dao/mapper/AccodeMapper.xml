@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.hexor.dao.IAccodeMapper">
+   <sql id="columnAccode">
+		  ID,
+		  code,
+		  type
+	 </sql>
+ 
+    <resultMap type="com.hexor.repo.Accode" id="accodeResultMap">  
+        <id property="id" column="id"/>  
+        <result property="code" column="code"/>  
+        <result property="type" column="type"/>  
+    </resultMap>
+    
+     <select id="getAllCode"   resultMap="accodeResultMap">
+            select * from accode 
+    </select>
+    
+    
+    <insert id="insertCode"  parameterType="com.hexor.repo.Accode" >
+    		insert into accode(<include refid="columnAccode" />) values(
+            	#{id},
+            	#{code},
+            	#{type}
+            	)
+    </insert>
+    
+    <select id="getAcCode" parameterType="com.hexor.repo.Accode" resultType="com.hexor.repo.Accode">
+    	select * from accode where code=#{code} and type=#{type}
+    </select>
+    
+    <delete id="deleteById" parameterType="com.hexor.repo.Accode">
+    	delete from accode where id=#{id}
+    </delete>
+    
+ </mapper>

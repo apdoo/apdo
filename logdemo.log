@@ -1,0 +1,11 @@
+2014-04-30 16:00:46  com.hexor.test.Log4jDemo.main(Log4jDemo.java:19)  info leave!
+2014-04-30 16:00:46  com.hexor.test.Log4jDemo.main(Log4jDemo.java:20)  warn leave!
+2014-04-30 16:00:46  com.hexor.test.Log4jDemo.main(Log4jDemo.java:21)  error leave!
+2014-04-30 16:03:23  com.hexor.test.Log4jDemo.main(Log4jDemo.java:18)  debug leave!
+2014-04-30 16:03:23  com.hexor.test.Log4jDemo.main(Log4jDemo.java:19)  info leave!
+2014-04-30 16:03:23  com.hexor.test.Log4jDemo.main(Log4jDemo.java:20)  warn leave!
+2014-04-30 16:03:23  com.hexor.test.Log4jDemo.main(Log4jDemo.java:21)  error leave!
+2014-04-30 16:03:55  com.hexor.test.Log4jDemo.main(Log4jDemo.java:21)  error leave!
+2014-05-27 13:27:30  com.hexor.test.Log4jDemo.main(Log4jDemo.java:21)  error leave!
+2014-05-27 13:30:35  com.hexor.test.Log4jDemo.main(Log4jDemo.java:20)  warn leave!
+2014-05-27 13:30:35  com.hexor.test.Log4jDemo.main(Log4jDemo.java:21)  error leave!
