@@ -36,6 +36,7 @@
 		<mapper resource="com/hexor/dao/mapper/UserMapper.xml" />
 		<mapper resource="com/hexor/dao/mapper/AccodeMapper.xml" />
 		<mapper resource="com/hexor/dao/mapper/MessageBoxMapper.xml" />
+		<mapper resource="com/hexor/dao/mapper/VideoMapper.xml" />
 	</mappers>
 
 

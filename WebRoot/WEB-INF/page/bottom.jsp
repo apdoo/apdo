@@ -6,28 +6,28 @@
 	href="${pageContext.request.contextPath}/resources/css/style.css">
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript">
-	$(function() {
-		$.ajax({
-			type : "POST",
-			url : "${pageContext.request.contextPath}/sign/people",
-		    dataType:"json",
-			success : function(data) {
-				//字符串
-				var msg=data.msg;
-				var p=(data.msg).length;
-				
-				for(var i=0;i<(7-p);i++){
-					$("#total-downloads").append("</span><span class='number'>0</span>");
-				}
-				for(var j=0;j<p;j++){
-					$("#total-downloads").append("<span class='number'>"+msg.charAt(j)+"</span>");
-				}
-			},
-			//请求出错的处理
-              error:function(){
-        }
-		});
-	});
+	<%--$(function() {--%>
+		<%--$.ajax({--%>
+			<%--type : "POST",--%>
+			<%--url : "${pageContext.request.contextPath}/sign/people",--%>
+		    <%--dataType:"json",--%>
+			<%--success : function(data) {--%>
+				<%--//字符串--%>
+				<%--var msg=data.msg;--%>
+				<%--var p=(data.msg).length;--%>
+				<%----%>
+				<%--for(var i=0;i<(7-p);i++){--%>
+					<%--$("#total-downloads").append("</span><span class='number'>0</span>");--%>
+				<%--}--%>
+				<%--for(var j=0;j<p;j++){--%>
+					<%--$("#total-downloads").append("<span class='number'>"+msg.charAt(j)+"</span>");--%>
+				<%--}--%>
+			<%--},--%>
+			<%--//请求出错的处理--%>
+              <%--error:function(){--%>
+        <%--}--%>
+		<%--});--%>
+	<%--});--%>
 	
 </script>
 </head>
@@ -35,17 +35,17 @@
 	<div id="footer">
 		<div class="inner">
 			<div class="footer-top clearfix">
-				<div class="col">
-					<div class="footer-post">
-						<p style="font-family: Microsoft YaHei;">
-							作者的联系方式<br>
-							QQ:837484691
-							<br>
-							E-mail:837484691@qq.com
-							<br>
-						</p>
-					</div>
-				</div>
+				<%--<div class="col">--%>
+					<%--<div class="footer-post">--%>
+						<%--<p style="font-family: Microsoft YaHei;">--%>
+							<%--作者的联系方式<br>--%>
+							<%--QQ:837484691--%>
+							<%--<br>--%>
+							<%--E-mail:837484691@qq.com--%>
+							<%--<br>--%>
+						<%--</p>--%>
+					<%--</div>--%>
+				<%--</div>--%>
 			<!-- 	<div class="col" style="font-family: Microsoft YaHei;">
 				作者的<a href="http://shop111353665.taobao.com/" target="_blank" class="read-more">淘宝小店链接</a>
 				<p>

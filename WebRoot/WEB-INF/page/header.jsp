@@ -62,6 +62,12 @@
 							<li id="menu-item-2270"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2270"><a
 							href="http://tieba.baidu.com/" target="_blank">跳转贴吧</a><span class="divider">/</span></li>
+                        <li id="menu-item-2272"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2272"><a
+                                href="${pageContext.request.contextPath}/video/home" target="_blank">播放列表测试</a><span class="divider">/</span></li>
+                        <li id="menu-item-2273"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2273"><a
+                                href="${pageContext.request.contextPath}/video/test" target="_blank">播放视频测试</a><span class="divider">/</span></li>
 					</ul>
 				</div>
 			</div>

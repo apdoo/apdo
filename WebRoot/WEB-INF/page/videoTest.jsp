@@ -33,34 +33,43 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	//可以直接在js中写el表达式的：var username = "${username}";
 	//alert(eval(data).length);  data为object数组var data=${list};
 	$(function() {
-   
+
 	});
 	</script>
   </head>
   
   <body>
   	<jsp:include page="header.jsp"></jsp:include>
-  	<div id="content" class="clearfix" >
-  		<h5>客户端版介绍</h5>
-  		客户端版本支持百度贴吧与百度文库的每日签到功能，百度文库签到能够获取每日财富，方便在百度文库下载各种文件资料！
- 		<div style="margin: auto;">
- 			<p style=" text-align: center;"> 
-  		<img   alt="图片读取失败" src="${pageContext.request.contextPath}/resources/img/2.PNG">
-  		</p>
-  			<p style=" text-align: center;">
-  		<img   alt="图片读取失败" src="${pageContext.request.contextPath}/resources/img/3.PNG">
-  		</p>
- 		</div>
- 		<p>
- 			由于百度官方的登录接口，贴吧登录签到接口以及文库签到接口会不定时的更新变动，
- 			作者会一直更新客户端版的最近版本。有需要的同学可以联系作者或直接点击进入
- 			<a href="#" target="_blank">客户端版本</a>
-             <!--
-             http://item.taobao.com/item.htm?spm=a1z10.1.w4004-7500619784.2.yNlscZ&id=39404974728
-             -->
- 		</p>
-  	</div>
- 		
+
+      <p style=" text-align: center;">
+          96年丁字裤小骚逼说她好痛<br/>
+          <video width="320" height="240" controls="controls">
+              <source src="${pageContext.request.contextPath}/resources/video/t4.mp4" type="video/mp4" >示例视频1</source>
+              您的浏览器不支持video标签
+          </video>
+      </p>
+      <p style=" text-align: center;">
+          3P第一次<br/>
+          <video width="320" height="240" controls="controls">
+              <source src="${pageContext.request.contextPath}/resources/video/t1.mp4" type="video/mp4" >示例视频1</source>
+              您的浏览器不支持video标签
+          </video>
+      </p>
+      <p style=" text-align: center;">
+          后入感受美臀的后座力<br>
+          <video width="320" height="240" controls="controls">
+              <source src="${pageContext.request.contextPath}/resources/video/t2.mp4" type="video/mp4" >示例视频1</source>
+              您的浏览器不支持video标签
+          </video>
+      </p>
+      <p style=" text-align: center;">
+          <video width="320" height="240" controls="controls">
+              騒妻2.mp4
+              <source src="${pageContext.request.contextPath}/resources/video/t3.mp4" type="video/mp4" >示例视频1</source>
+              您的浏览器不支持video标签
+          </video>
+      </p>
+
   	<jsp:include page="bottom.jsp"></jsp:include>
   </body>
 </html>

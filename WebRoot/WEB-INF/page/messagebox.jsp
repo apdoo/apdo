@@ -136,9 +136,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			 });
 		 //循环处理数组
 		 $.each(list, function(key, val) {      
-			 //数组　  
+			 //数组　
 			 $("#message").append("<div class='ds-comment-body'><div class='user-name'>"+val.username+"</div><p>"+val.message+"</p>"+"<div class='ds-foot'>"+"<span class='ds-time'>"+val.datetime+"</span></div></div><br>");
-	 　　});  
+	 });
 	}
 	</script>
   </head>

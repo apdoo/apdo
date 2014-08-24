@@ -26,4 +26,6 @@ public class JumpController {
 	public String single(HttpSession session, ModelMap model){
 		return "singleversion";
 	}
+
+
 }

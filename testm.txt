@@ -1,5 +1,1 @@
-aaa
-aaa
-aa
-bbb
-ccc
+%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
